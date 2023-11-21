@@ -89,7 +89,7 @@ dt.sig-object{
   /* color: #7E84F7; */
   background: -webkit-linear-gradient(left,#F09B59, #6ab0de,  #7E84F7);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   border-top: 3px solid #732BF5;
 }
 
