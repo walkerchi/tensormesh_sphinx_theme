@@ -2,6 +2,7 @@ from typing import List, Optional
 
 import sphinx.ext.autosummary.generate as autosummary
 from .logo import logo_role
+from .color import red_role, green_role, blue_role, orange_role, purple_role
 
 
 def monkey_patch_find_autosummary_in_lines(
@@ -126,6 +127,9 @@ def monkey_patch_find_autosummary_in_lines(
     return documented
 
 
+
+
+
 def setup(app):
     # Monkey-patch `sphinx.ext.autosummary.find_autosummary_in_lines`:
     autosummary.find_autosummary_in_lines = (
@@ -137,6 +141,11 @@ def setup(app):
     app.add_role('pytorch', logo_role)
     app.add_role('colab', logo_role)
     app.add_role('github', logo_role)
+    app.add_role('red', red_role)
+    app.add_role('green', green_role)
+    app.add_role('blue', blue_role)
+    app.add_role('orange', orange_role)
+    app.add_role('purple', purple_role)
 
     app.add_js_file('js/on_torch_fem_load.js')
 
