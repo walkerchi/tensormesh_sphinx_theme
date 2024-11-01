@@ -5,7 +5,15 @@ from typing import List, Optional
 
 from setuptools import find_packages, setup
 
-__version__ = '0.1.0'
+def read_version():
+    version_file = os.path.join(os.path.dirname(__file__), 'tensormesh_sphinx_theme', '_version.py')
+    with open(version_file, 'r') as f:
+        version_content = f.read()
+    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_content, re.M)
+    if version_match:
+        return version_match.group(1)
+    raise RuntimeError("Unable to find version string.")
+
 
 
 def package_files(
@@ -25,7 +33,7 @@ def package_files(
 
 setup(
     name='tensormesh_sphinx_theme',
-    version=__version__,
+    version=read_version(),
     author='walker chi',
     author_email='walker.chi.000@gmail.com',
     url='https://github.com/walkerchi/tensormesh_sphinx_theme',
