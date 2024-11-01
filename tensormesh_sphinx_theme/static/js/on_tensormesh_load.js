@@ -22,8 +22,8 @@ $(document).ready(function() {
   function addMonospaceFont(selector) {
     $(selector).each(function(i) {
       var text = $(this).text();
-      if (text.startsWith("torch_fem")) {
-        $(this).addClass("torch-fem-mono");
+      if (text.startsWith("tensormesh")) {
+        $(this).addClass("tensormesh-mono");
   
         // Delete main package names:
         text = $(this).contents()[0].textContent;
@@ -34,7 +34,7 @@ $(document).ready(function() {
         }
       }
       else if (text.startsWith("Source code")) {
-        $(this).html(`${text.substr(0,16)}<span class="torch-fem">${text.substr(16)}</span>`);
+        $(this).html(`${text.substr(0,16)}<span class="tensormesh">${text.substr(16)}</span>`);
       }
     });
   }

@@ -37,7 +37,7 @@
 .wy-nav-top {
   background: rgb(243,244,247);
   color: #343131;
-  background-image: url(https://raw.githubusercontent.com/walkerchi/torch_fem_sphinx_theme/master/torch_fem_sphinx_theme/static/img/torch_fem_logo.png);
+  background-image: url(https://raw.githubusercontent.com/walkerchi/tensormesh_sphinx_theme/master/tensormesh_sphinx_theme/static/img/tensormesh_logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 36px;
@@ -304,7 +304,7 @@ div.highlight div.mac-header span.copy:active {
 
 /* Extensions */
 
-a.torch-fem-button,
+a.tensormesh-button,
 a.btn {
   border: none;
   box-shadow: none;
@@ -314,19 +314,19 @@ a.btn {
   background: linear-gradient(to bottom right, rgb(59,124,221), rgb(30,124,221));
 }
 
-a.torch-fem-button svg {
+a.tensormesh-button svg {
   position: relative;
   top: 5px;
   margin-right: 5px;
 }
 
-a.torch-fem-button:hover,
+a.tensormesh-button:hover,
 a.btn:hover {
   background: linear-gradient(to bottom right, rgb(30,124,221), rgb(23,90,180));
   transition: none;
 }
 
-a.torch-fem-button:visited,
+a.tensormesh-button:visited,
 a.btn:visited {
   color: white !important;
   background: linear-gradient(to bottom right, rgb(59,124,221), rgb(30,124,221));
@@ -364,9 +364,9 @@ span.inline-logo {
   background-position-y: 0;
 }
 }
-span.inline-logo.torch-fem {
+span.inline-logo.tensormesh {
   padding-left: 28px;
-  background-image: url(../img/torch_fem_logo.webp);
+  background-image: url(../img/tensormesh_logo.webp);
 }
 span.inline-logo.python {
   padding-left: 24px;
@@ -404,11 +404,11 @@ span.inline-logo.youtube {
 }
 
 /* Monospace fonts */
-.torch-fem-mono {
+.tensormesh-mono {
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,Courier,monospace;
 }
-h1.torch-fem-mono,
-h1 span.torch-fem-mono {
+h1.tensormesh-mono,
+h1 span.tensormesh-mono {
   letter-spacing: -1px;
 }
 

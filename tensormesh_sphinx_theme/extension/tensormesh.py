@@ -73,7 +73,7 @@ def monkey_patch_find_autosummary_in_lines(
                             recursive,
                         ))
                 continue
-            # End of modified part by `torch_fem_sphinx_theme` ######################
+            # End of modified part by `tensormesh_sphinx_theme` ######################
 
             if line.strip().startswith(':'):
                 continue
@@ -147,7 +147,7 @@ def setup(app):
     app.add_role('orange', orange_role)
     app.add_role('purple', purple_role)
 
-    app.add_js_file('js/on_torch_fem_load.js')
+    app.add_js_file('js/on_tensormesh_load.js')
 
     return {
         'parallel_read_safe': True,
