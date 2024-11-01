@@ -1,1 +1,1 @@
-# Torch-FEM Sphinx Theme
+# Tensormesh Sphinx Theme

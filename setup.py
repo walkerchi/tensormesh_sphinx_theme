@@ -24,25 +24,25 @@ def package_files(
 
 
 setup(
-    name='torch_fem_sphinx_theme',
+    name='tensormesh_sphinx_theme',
     version=__version__,
     author='walker chi',
     author_email='walker.chi.000@gmail.com',
-    url='https://github.com/walkerchi/torch_fem_sphinx_theme',
+    url='https://github.com/walkerchi/tensormesh_sphinx_theme',
     install_requires=[
         'sphinx==5.1.1',
         'sphinx_rtd_theme>=1.0',
     ],
     package_data={
-        'torch_fem_sphinx_theme': [
+        'tensormesh_sphinx_theme': [
             'theme.conf',
-            *package_files('torch_fem_sphinx_theme/static',
+            *package_files('tensormesh_sphinx_theme/static',
                            ['css', 'js', 'png', 'svg']),
         ]
     },
     entry_points={
         'sphinx.html_themes': [
-            'torch_fem_sphinx_theme = torch_fem_sphinx_theme',
+            'tensormesh_sphinx_theme = tensormesh_sphinx_theme',
         ]
     },
     packages=find_packages(),
